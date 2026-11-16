@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes",
+    "isbn": "9788420412146"
+  },
+  {
+    "title": "Cien años de soledad",
+    "author": "Gabriel García Márquez",
+    "isbn": "9788439732471"
+  },
+  {
+    "title": "La casa de los espíritus",
+    "author": "Isabel Allende",
+    "isbn": "9788401352891"
+  },
+  {
+    "title": "Orgullo y prejuicio",
+    "author": "Jane Austen",
+    "isbn": "9780000000019"
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "isbn": "9780000000026"
+  },
+  {
+    "title": "Drácula",
+    "author": "Bram Stoker",
+    "isbn": "9780000000033"
+  },
+  {
+    "title": "Mujercitas",
+    "author": "Louisa May Alcott",
+    "isbn": "9780000000040"
+  },
+  {
+    "title": "La metamorfosis",
+    "author": "Franz Kafka",
+    "isbn": "9780000000057"
+  },
+  {
+    "title": "El retrato de Dorian Gray",
+    "author": "Oscar Wilde",
+    "isbn": "9780000000064"
+  },
+  {
+    "title": "La isla del tesoro",
+    "author": "Robert Louis Stevenson",
+    "isbn": "9780000000071"
+  },
+  {
+    "title": "Viaje al centro de la Tierra",
+    "author": "Jules Verne",
+    "isbn": "9780000000088"
+  },
+  {
+    "title": "Veinte mil leguas de viaje submarino",
+    "author": "Jules Verne",
+    "isbn": "9780000000095"
+  },
+  {
+    "title": "Alicia en el país de las maravillas",
+    "author": "Lewis Carroll",
+    "isbn": "9780000000101"
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "isbn": "9780000000118"
+  },
+  {
+    "title": "Cumbres borrascosas",
+    "author": "Emily Brontë",
+    "isbn": "9780000000125"
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "isbn": "9780000000132"
+  },
+  {
+    "title": "Los miserables",
+    "author": "Victor Hugo",
+    "isbn": "9780000000149"
+  },
+  {
+    "title": "Crimen y castigo",
+    "author": "Fiódor Dostoyevski",
+    "isbn": "9780000000156"
+  },
+  {
+    "title": "La vuelta al mundo en ochenta días",
+    "author": "Jules Verne",
+    "isbn": "9780000000163"
+  },
+  {
+    "title": "El jardín secreto",
+    "author": "Frances Hodgson Burnett",
+    "isbn": "9780000000170"
+  },
+  {
+    "title": "El conde de Montecristo",
+    "author": "Alexandre Dumas",
+    "isbn": "9780000000187"
+  },
+  {
+    "title": "Las aventuras de Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "isbn": "9780000000194"
+  },
+  {
+    "title": "La Odisea",
+    "author": "Homero",
+    "isbn": "9780000000200"
+  },
+  {
+    "title": "La Ilíada",
+    "author": "Homero",
+    "isbn": "9780000000217"
+  }
+]

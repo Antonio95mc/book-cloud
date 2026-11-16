@@ -1,0 +1,74 @@
+/* La identidad Book Cloud combina azul marino, turquesa y tipografía sans serif local.
+   No se descargan fuentes ni imágenes de terceros. Chakra gestiona la estructura
+   responsive y este archivo concentra los detalles de marca e ilustraciones. */
+:root { font-family: 'Avenir Next', Avenir, 'Trebuchet MS', ui-sans-serif, system-ui, sans-serif; color-scheme: light; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+:focus-visible { outline: 3px solid #008e8a; outline-offset: 4px; }
+.serif, .hero-title, .cover-title { font-family: 'Avenir Next', Avenir, 'Trebuchet MS', ui-sans-serif, sans-serif !important; font-weight: 750 !important; letter-spacing: -.035em; }
+.header { min-height: 110px; padding-block: 20px; border-bottom: 1px solid #dce8ef; margin-bottom: 34px; }
+.brand { display: flex; gap: 10px; align-items: center; font: 800 29px 'Avenir Next', Avenir, sans-serif; background: transparent; border: 0; color: #06264d; white-space: nowrap; }
+.brand-dot { color: #008e8a; }
+.primary { background: #06264d !important; color: #ffffff !important; border-radius: 7px !important; }
+.primary:hover { background: #103d6b !important; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .19em; color: #4a687d; margin-bottom: 15px; }
+.hero { padding: 26px 0 30px; border-bottom: 1px solid #dce8ef; }
+.hero-title { font-size: clamp(38px, 5.4vw, 68px) !important; line-height: 1.08 !important; letter-spacing: -.045em; }
+.hero-title em { color: #008e8a; }
+.hero-art { height: 365px; position: relative; overflow: hidden; background: #e3f4f3; border-radius: 48% 48% 3px 3px; }
+.sun { position: absolute; width: 220px; height: 220px; background: #36c7bd; border-radius: 50%; right: -40px; top: 30px; opacity: .45; }
+.hero-book { position: absolute; width: 170px; height: 248px; border-radius: 3px 8px 8px 3px; box-shadow: 10px 15px 20px #273a3424; border-left: 7px solid #ffffff18; }
+.hero-book.back { left: calc(50% - 140px); top: 62px; transform: rotate(-16deg); background: #00a6a0; color: #ffffff; font: 700 25px/1.5 'Avenir Next', Avenir, sans-serif; padding: 35px 15px; }
+.hero-book.front { left: calc(50% - 30px); top: 42px; transform: rotate(9deg); background: #06264d; color: #ffffff; padding: 17px; display: flex; flex-direction: column; justify-content: space-between; }
+.hero-book.front span { font-size: 7px; letter-spacing: .16em; }
+.hero-book.front strong { font: 800 31px/1.05 'Avenir Next', Avenir, sans-serif; }
+.hero-book.front small { font-size: 6px; letter-spacing: .15em; }
+.art-note { position: absolute; bottom: 22px; width: 100%; text-align: center; font: 500 14px 'Avenir Next', Avenir, sans-serif; color: #42647e; }
+.search-box { background: #eaf2f7; padding: 4px 16px; border-radius: 7px; width: min(100%, 330px); }
+.cover-stage { height: 300px; background: #eaf2f7; border-radius: 9px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.book-cover { width: 175px; height: 242px; background: var(--cover); padding: 20px 18px; color: #ffffff; border-radius: 2px 7px 7px 2px; border-left: 7px solid #0000001a; box-shadow: 9px 12px 18px #182b3029; display: flex; flex-direction: column; position: relative; transition: transform .25s ease; }
+.book-card:hover .book-cover { transform: translateY(-5px) rotate(-2deg); }
+.cover-kicker { font-size: 5px; letter-spacing: .13em; margin-bottom: 14px; }
+.cover-title { font-size: 23px !important; line-height: 1.1 !important; z-index: 1; }
+.cover-author { font-size: 9px; margin-top: auto; z-index: 1; }
+.cover-art { display: flex; gap: 5px; height: 70px; align-items: flex-end; margin: 17px 0; }
+.cover-art span { display: block; width: 29px; border: 1px solid #ffffff70; height: 65px; border-radius: 40px 40px 0 0; }
+.cover-art span:nth-child(2) { height: 45px; background: #ffffff30; }
+.cover-art span:nth-child(3) { height: 55px; }
+.heart-button { position: absolute !important; right: 13px; top: 13px; background: #f4f9fc !important; border-radius: 50% !important; padding: 0 !important; min-width: 38px !important; height: 38px !important; }
+.panel { background: #ffffff; padding: clamp(22px, 4vw, 42px); border: 1px solid #dce8ef; border-radius: 14px; }
+.panel input:not([type=file]) { background: #f4f9fc; border-color: #b9cfdc; }
+.avatar { height: 42px; width: 42px; border-radius: 50%; object-fit: cover; }
+.avatar.small { width: 25px; height: 25px; }
+.avatar.preview, .avatar-placeholder { height: 60px; width: 60px; border-radius: 50%; }
+.avatar-placeholder { background: #e3f4f3; display: grid; place-items: center; }
+.avatar.profile { height: 80px; width: 80px; }
+.notice { padding: 14px 18px; background: #e1f4f1; border: 1px solid #b6ddd8; border-radius: 8px; font-size: 14px; }
+.notice.error { background: #faece5; border-color: #e4c7b9; color: #822f28; }
+.user-row { padding: 18px 0; border-top: 1px solid #dce8ef; }
+@media (max-width: 767px) { .hero-art { height: 320px; max-width: 480px; width: 100%; margin: 0 auto; } .header { gap: 20px; } }
+@media (prefers-reduced-motion: reduce) { .book-cover { transition: none; } }
+
+/* NavLink añade aria-current automáticamente a la página activa. */
+.nav-link { display: inline-flex; gap: 7px; align-items: center; padding: 8px 5px; font-size: 14px; text-decoration: none; }
+.nav-link[aria-current=page] { color: #007f7c; box-shadow: inset 0 -2px #008e8a; }
+.panel input[type=file] { max-width: 100%; font-size: 13px; }
+
+/* Logo grande en cabecera y pequeño en el pie; proporciones preservadas. */
+.brand-mark { display: inline-flex; align-items: center; gap: 9px; width: 230px; }
+.brand-mark img { width: 100%; height: 77px; object-fit: contain; }
+.brand-word { font: 850 31px/1.1 'Avenir Next', Avenir, 'Trebuchet MS', sans-serif; letter-spacing: -1.5px; color: #06264d; }
+.brand-word > span { color: #00a6a0; }
+.brand-symbol { position: relative; display: inline-flex; width: 42px; height: 40px; flex-shrink: 0; }
+.brand-symbol svg:first-child { width: 42px; height: 40px; fill: #06264d; stroke: #06264d; }
+.brand-symbol svg:last-child { position: absolute; width: 24px; height: 24px; bottom: 1px; left: 9px; stroke: #00a6a0; fill: #fff; }
+.brand-small { width: 142px; gap: 6px; }
+.brand-small img { height: 48px; }
+.brand-small .brand-word { font-size: 21px; letter-spacing: -1px; }
+.brand-small .brand-symbol { width: 30px; height: 30px; }
+.brand-small .brand-symbol svg:first-child { width: 30px; height: 30px; }
+.brand-small .brand-symbol svg:last-child { width: 18px; height: 18px; left: 6px; }
+.footer-tagline { color: #546a80; font-size: 14px; }
+.hero-title em { font-style: normal; }
